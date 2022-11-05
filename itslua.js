@@ -804,7 +804,7 @@ repeat wait() until Player.Character
 local Character = Player.Character
 local pHum = Character:WaitForChild("Humanoid")
 local humRoot = Character:WaitForChild("HumanoidRootPart")
-local Multiplier = 7 --adjust this for more or less speed
+local Multiplier = 3 --adjust this for more or less speed
 
 userInput.InputBegan:connect(function(Key)
 
