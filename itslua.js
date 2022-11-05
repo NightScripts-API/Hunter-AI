@@ -205,6 +205,7 @@ local Button = Tab:CreateButton({
 			st1.TextColor3 = Color3.new(0.0431373, 1, 0.0745098)
 			st1.TextScaled = true
 			st1.TextSize = 14
+					
 			st1.TextWrapped = true
 			
 			st1_2.Name = getrandomstring()
@@ -795,39 +796,6 @@ local Button = Tab:CreateButton({
 	Callback = function()
 
 
-
-local Players = game:service("Players")
-local Player = Players.LocalPlayer
-local userInput = game:service("UserInputService")
-local runService = game:service("RunService")
-repeat wait() until Player.Character
-local Character = Player.Character
-local pHum = Character:WaitForChild("Humanoid")
-local humRoot = Character:WaitForChild("HumanoidRootPart")
-local Multiplier = 3 --adjust this for more or less speed
-
-userInput.InputBegan:connect(function(Key)
-
-Multiplier = Multiplier + 0.1
-
-
-
-Multiplier = Multiplier + 0.1
-
-
-Multiplier = Multiplier - 0.1
-
-
-
-Multiplier = Multiplier - 0.1
-
-end)
-
-runService.Stepped:connect(function()
-
-humRoot.CFrame = humRoot.CFrame + pHum.MoveDirection * Multiplier
-
-end)
 
 		local player = game.Players.LocalPlayer
 
